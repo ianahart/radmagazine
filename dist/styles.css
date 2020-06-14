@@ -1,0 +1,239 @@
+/* =====GENERAL===== */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+#footer-helper {
+  height: 100px;
+}
+
+#logo {
+  height: 48px;
+  width: 48px;
+}
+
+#navigation ul {
+  margin: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+p {
+  font-family: 'Merriweather', serif;
+}
+/* =====GENERAL===== */
+
+/* =====HOME===== */
+#website-title {
+  font-family: 'Racing Sans One', cursive;
+}
+#section-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+#section-one img {
+  min-width: 250px;
+}
+#section-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-width: 250px;
+}
+#section-four {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+#section-four h2 {
+  grid-column: 1 / 4;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#section-five {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#section-five h2 span {
+  color: blue;
+}
+#about-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+h3 span {
+  font-size: 14px;
+}
+hr {
+  width: 70%;
+}
+#section-six {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 100px;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.icon-link {
+  display: inline-block;
+}
+.icn {
+  font-size: 48px;
+  margin: 0 30px;
+}
+/* =====HOME===== */
+
+/* =====VIDEOS===== */
+.video-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+/* =====VIDEOS===== */
+/* =====FEATURES===== */
+.horizontal-rule {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #dcdcdc;
+  margin-bottom: 3.5rem;
+  margin-top: 3.5rem;
+}
+.features-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.features-main div:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.features-main div:nth-child(2) {
+  margin-top: 4.5rem;
+  padding: 0 3.5rem;
+}
+
+.features-main div:nth-child(2) span {
+  font-size: 0.8rem;
+}
+
+.features-main-image {
+  min-width: 100%;
+  width: 100%;
+}
+.features-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.features-secondary-image {
+  min-width: 100%;
+  width: 100%;
+}
+.features-secondary-text-container {
+  margin-top: 4.5rem;
+  padding: 0 3.5rem;
+}
+
+/* =====FEATURES===== */
+/* =====MEDIA QUERIES===== */
+
+@media only screen and (max-width: 600px) {
+  #website-title {
+    font-size: 3rem;
+  }
+  #section-four {
+    grid-template-columns: 1fr;
+  }
+  #section-four .card {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #section-one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #section-two {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #section-three iframe {
+    width: auto;
+  }
+  #section-four h2 {
+    display: grid;
+    grid-column: 1 / 2;
+  }
+  #section-four {
+    grid-template-columns: 1fr;
+  }
+  /* #section-four #card-one {
+    grid-column: 1 / 2;
+  }
+  #section-four #card-two {
+    grid-column: 2 / 1;
+  }
+  #section-four #card-two {
+    grid-column: 4 / 1;
+  } */
+  #section-five {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #section-six {
+    grid-column: 1 / 1;
+  }
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+  .video-container iframe {
+    width: 250px;
+    height: 200px;
+  }
+  .features-main div:nth-child(1) {
+    grid-column: 1 / 4;
+  }
+  .features-main div:nth-child(2) {
+    margin-top: 30px;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
+  .features-secondary-image-container {
+    grid-column: 1 / 3;
+  }
+  .features-secondary-text-container {
+    grid-column: 1 / 3;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 1000px) and (min-width: 900px) {
+  #section-four {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: blue;
+  }
+} */
+
+/* =====MEDIA QUERIES===== */
